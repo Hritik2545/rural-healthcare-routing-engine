@@ -28,6 +28,109 @@ Travel Cost + Wait Time
 and ensuring emergency-specific treatment requirements are satisfied.
 
 ---
+🧠 Algorithm / Approach
+
+Step 1: Emergency Selection
+
+The user selects an emergency type:
+
+❤️ Cardiac Emergency
+🚑 Trauma Emergency
+👶 Child Emergency
+
+Each emergency has different requirements and priorities.
+
+Step 2: Village Selection
+
+The user selects the village where the patient is located.
+
+Example:
+
+Village A
+Village B
+Village C
+
+The system retrieves the geographic coordinates of the selected village.
+
+Step 3: Hospital Evaluation
+
+All nearby hospitals are evaluated based on:
+
+Distance from village
+Available beds
+Emergency specialization
+Medicine availability
+Ambulance availability
+
+Example:
+
+Hospital B:
+Distance = 10 km
+Beds = 15
+Specialization = Cardiac
+
+Hospital C:
+Distance = 25 km
+Beds = 30
+Specialization = Trauma
+Step 4: Intelligent Hospital Selection
+
+The system assigns a score to every hospital.
+
+Scoring Formula
+Hospital Score =
+(Specialization Match × 50)
++ (Available Beds × 2)
+- Distance
+
+The hospital with the highest score is selected.
+
+Step 5: Ambulance Allocation
+
+The nearest available ambulance is assigned.
+
+Factors considered:
+
+Current location
+Availability status
+Estimated arrival time
+Step 6: Medicine Verification
+
+Required medicines are checked according to the emergency type.
+
+Cardiac Emergency
+Aspirin
+Nitroglycerin
+Oxygen
+Trauma Emergency
+Blood Bags
+Painkillers
+Bandages
+Child Emergency
+Pediatric Medicines
+Vaccines
+IV Fluids
+
+Only hospitals with required medicines receive higher priority.
+
+Step 7: Emergency Dispatch
+
+After evaluation:
+
+Best hospital selected
+Ambulance dispatched
+Route generated
+Decision logged
+Step 8: Live Tracking
+
+The system displays:
+
+Patient location
+Ambulance location
+Selected hospital
+Route between locations
+
+using React Leaflet and OpenStreetMap.
 ## ✨ Features
 
 ### 🗺️ Interactive Emergency Routing Map
