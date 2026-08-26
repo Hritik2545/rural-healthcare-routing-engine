@@ -259,7 +259,7 @@ Estimated Response Time: 18 Minutes
 
 ### Dashboard
 
-![Dashboard](public/screenshots/dashboard.png)
+![Dashboard](public/screenshots/Dashboard.png)
 
 ### Cardiac Emergency Routing
 
@@ -275,4 +275,4 @@ Estimated Response Time: 18 Minutes
 
 ### Decision Log
 
-![Decision Log](public/screenshots/decisionlog.png)
+![Decision Log](public/screenshots/Decisionlog.png)
