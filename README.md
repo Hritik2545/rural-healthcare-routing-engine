@@ -276,3 +276,99 @@ Estimated Response Time: 18 Minutes
 ### Decision Log
 
 ![Decision Log](public/screenshots/Decisionlog.png)
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- React Leaflet
+- CSS3
+
+### Algorithms
+- Dijkstra Shortest Path
+- Priority Queue Based Scheduling
+- Dynamic Resource Allocation
+- Capacity Aware Routing
+
+### Data Management
+- JavaScript Data Structures
+- Graph-Based Routing Model
+
+### Visualization
+- OpenStreetMap
+- Leaflet Maps
+- Live Telemetry Dashboard
+
+### Version Control
+- Git
+- GitHub
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/hritik2545/rural-healthcare-routing-engine.git
+
+Navigate
+cd rural-healthcare-routing-engine
+
+Install Dependencies
+npm run dev
+
+Run Project
+npm run dev
+
+Application will start on:
+
+http://localhost:5173
+
+
+## 👥 Team Tech Rusher
+
+### Team Members
+
+- Hritik Jha
+
+### Collaborators
+
+- Twenitrix
+- AyushRBuilds
+- InvictusMF
+## 🚀 Future Scope
+
+The current prototype can be extended with:
+
+- Real Ambulance GPS Tracking
+- AI Based Demand Prediction
+- Multi-District Routing
+- Live Hospital API Integration
+- Real Medicine Inventory Systems
+- Doctor Shift Optimization
+- A* Pathfinding Optimization
+- Predictive Emergency Forecasting
+- Government Healthcare Integration
+
+## 🏆 Hackathon Highlights
+
+✅ Dynamic Emergency Routing
+
+✅ Specialist-Based Hospital Selection
+
+✅ Capacity Aware Scheduling
+
+✅ Real-Time Ambulance Dispatch
+
+✅ Medicine Allocation Engine
+
+✅ Interactive OpenStreetMap Visualization
+
+✅ Decision Transparency Dashboard
+
+✅ Dijkstra Based Route Optimization
+
+✅ Rural Healthcare Resource Management
+
+✅ Scalable Architecture for Large Networks
+
