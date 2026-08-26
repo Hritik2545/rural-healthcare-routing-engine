@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f7fc;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #64748b;
+}
+
+.top-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2,
+.card h3 {
+  color: #1e3a8a;
+}
+
+button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #b91c1c;
+}
+
+.metric {
+  background: #eff6ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.status-good {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.status-bad {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 15px 0;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.progress-container {
+  width: 100%;
+  height: 22px;
+  background: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #22c55e;
+  transition: width 0.5s ease;
+}
+
+.tracking-box {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    flex-direction: column;
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.tracking-box {
+  margin-top: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #22c55e;
+  transition: width 0.5s ease;
+}
