@@ -1,17 +1,30 @@
-# React + Vite
+# 🚑 Dynamic Rural Healthcare Routing Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An intelligent healthcare dispatch and resource allocation platform designed for rural healthcare networks.
 
-Currently, two official plugins are available:
+The system dynamically:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Routes patients to suitable hospitals
+- Dispatches the nearest available ambulance
+- Allocates medicines based on emergency type
+- Provides real-time tracking and telemetry
+- Optimizes operational cost (Travel Time + Wait Time)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Problem Statement
 
-## Expanding the Oxlint configuration
+Rural healthcare systems face:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# rural-healthcare-routing-engine
+- Limited specialist doctors
+- Scarce ambulance fleets
+- Dynamic medicine inventories
+- High emergency demand fluctuations
+
+The objective is to intelligently route patients while minimizing:
+
+Travel Cost + Wait Time
+
+and ensuring emergency-specific treatment requirements are satisfied.
+
+---
