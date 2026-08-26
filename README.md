@@ -170,7 +170,6 @@ based on emergency type and current system state.
 ---
 
 ## 🏗️ System Architecture
-
 Patient Request
         │
         ▼
@@ -191,3 +190,89 @@ Medicine Allocation
 Dispatch Engine
         ▼
 Live Tracking & Telemetry
+
+## 🎯 Demo Scenario
+
+### Emergency Request
+
+Village A reports a **Critical Cardiac Emergency**.
+
+### Available Hospitals
+
+| Hospital | Distance | Cardiologist | Status |
+|-----------|-----------|-------------|---------|
+| Hospital B | 10 km | ❌ No | Rejected |
+| Hospital C | 25 km | ✅ Yes | Selected |
+
+### Available Ambulances
+
+| Ambulance | Distance from Village |
+|------------|----------------------|
+| Ambulance A1 | 6 km |
+| Ambulance A2 | 14 km |
+| Ambulance A3 | 20 km |
+
+Selected Ambulance: **A1**
+
+### Medicine Allocation
+
+Required Medicines:
+
+- Cardiac Injection
+- Oxygen Support
+- ECG Monitoring Kit
+
+Medicine stock is reserved immediately after hospital selection.
+
+---
+
+## 🔍 Decision Breakdown
+
+Step 1:
+Emergency classified as Cardiac Emergency.
+
+Step 2:
+Hospitals evaluated based on specialist availability.
+
+Step 3:
+Hospital B rejected due to unavailable cardiologist.
+
+Step 4:
+Hospital C selected despite longer distance.
+
+Step 5:
+Nearest available ambulance dispatched.
+
+Step 6:
+Required medicines reserved.
+
+Step 7:
+Route generated and visualized on live map.
+
+Final Result:
+
+Village A ➜ Ambulance A1 ➜ Hospital C
+
+Estimated Response Time: 18 Minutes
+
+## 📷 Application Screenshots
+
+### Dashboard
+
+![Dashboard](public/screenshots/dashboard.png)
+
+### Cardiac Emergency Routing
+
+![Cardiac](public/screenshots/cardiac.png)
+
+### Trauma Emergency Routing
+
+![Trauma](public/screenshots/trauma.png)
+
+### Interactive Map
+
+![Map](public/screenshots/map.png)
+
+### Decision Log
+
+![Decision Log](public/screenshots/decisionlog.png)
