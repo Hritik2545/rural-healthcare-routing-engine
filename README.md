@@ -28,3 +28,166 @@ Travel Cost + Wait Time
 and ensuring emergency-specific treatment requirements are satisfied.
 
 ---
+## ✨ Features
+
+### 🗺️ Interactive Emergency Routing Map
+- Real-time map visualization using React Leaflet
+- Village, Ambulance, and Hospital markers
+- Route visualization between patient location and assigned hospital
+- Emergency-specific route highlighting
+
+### 🚑 Intelligent Ambulance Dispatch
+- Selects nearest available ambulance
+- Dynamic resource allocation
+- Capacity-aware dispatch decisions
+
+### 🏥 Smart Hospital Selection
+- Evaluates hospital capabilities
+- Checks specialist availability
+- Considers bed capacity
+- Routes patients to the most suitable facility
+
+### 💊 Dynamic Medicine Allocation
+Different emergencies generate different medicine queues:
+
+#### Cardiology
+- Aspirin
+- Nitroglycerin
+- Oxygen Cylinder
+- ECG Kit
+
+#### Trauma
+- Blood Units
+- IV Fluids
+- Bandages
+- Painkillers
+
+#### Pediatrics
+- ORS
+- Paracetamol
+- Pediatric Syrup
+- Pediatric IV Kit
+
+### 📡 Live Tracking
+- Tracking ID generation
+- Ambulance status monitoring
+- Estimated Time of Arrival (ETA)
+- Route completion progress bar
+
+### 📊 Live Telemetry Dashboard
+- Active emergency cases
+- Ambulance availability
+- Hospital bed utilization
+- Resource monitoring
+
+### 📝 Decision Transparency
+Every dispatch includes:
+- Selected hospital
+- Selected ambulance
+- Cost calculation
+- Medicine preparation log
+- Routing explanation
+
+## 🧠 Algorithmic Core
+
+The platform uses graph-based routing and dynamic resource allocation to optimize emergency response.
+
+### Routing Engine
+
+The routing engine evaluates:
+
+1. Emergency Type
+2. Hospital Capability
+3. Ambulance Availability
+4. Resource Capacity
+5. Operational Cost
+
+The final decision minimizes:
+
+Total Cost = Travel Time + Wait Time + Resource Cost
+
+---
+
+### Hospital Selection Algorithm
+
+The system filters hospitals based on emergency requirements.
+
+Example:
+
+Cardiology Emergency
+
+Hospital B:
+- Distance: 10 km
+- No Cardiologist Available
+
+Hospital C:
+- Distance: 25 km
+- Cardiologist Available
+
+Result:
+Hospital C Selected
+
+The algorithm prioritizes treatment capability over minimum distance.
+
+---
+
+### Ambulance Dispatch Algorithm
+
+The engine selects:
+
+Nearest Available Ambulance
+
+while considering:
+
+- Availability
+- Distance
+- Emergency Priority
+
+---
+
+### Dynamic Resource Allocation
+
+The system dynamically allocates:
+
+- Ambulances
+- Hospital Beds
+- Specialists
+- Medicines
+
+based on emergency type and current system state.
+
+---
+
+### Complexity Analysis
+
+| Operation | Complexity |
+|------------|------------|
+| Priority Queue Operations | O(log n) |
+| Hospital Selection | O(n) |
+| Ambulance Selection | O(n) |
+| Route Computation (Dijkstra) | O(E log V) |
+
+---
+
+## 🏗️ System Architecture
+
+Patient Request
+        │
+        ▼
+Emergency Classification
+        │
+        ▼
+Resource Evaluation
+        │
+ ┌──────┴──────┐
+ ▼             ▼
+Hospital     Ambulance
+Selection    Selection
+ │             │
+ └──────┬──────┘
+        ▼
+Medicine Allocation
+        ▼
+Dispatch Engine
+        ▼
+Live Tracking & Telemetry
