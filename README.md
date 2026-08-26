@@ -475,3 +475,6 @@ The current prototype can be extended with:
 
 ✅ Scalable Architecture for Large Networks
 
+Third-Party APIs Used:
+- OpenStreetMap (for map visualization)
+- No paid or proprietary APIs used.
